@@ -1,0 +1,388 @@
+.video-page {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+}
+
+.video-page-logo.logo {
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: static;
+    height: 28px;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.header-title {
+    display: none;
+}
+
+.video-html .main-header .header-title.desktop-only {
+    @media screen and (min-width: $desktopsmall) {
+        display: block;
+    }
+}
+
+.header-title {
+    display: none;
+    font-size: 42px;
+    text-align: center;
+    font-family: 'MuseoSans-900', sans-serif;
+    letter-spacing: 2px;
+
+    a {
+        text-decoration: none;
+        color: $red;
+    }
+
+    &.mobile-only {
+        display: block;
+        font-size: 38px;
+    }
+
+    &.desktop-only {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktopsmall) {
+        &.mobile-only {
+            display: none;
+        }
+
+        &.desktop-only {
+            display: none;
+            font-size: 22px;
+            float: left;
+            margin-top: 19px;
+            margin-left: 18px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        &.desktop-only {
+            font-size: 28px;
+            margin-top: 18px;
+        }
+    }
+}
+
+.back-link {
+    display: block;
+    border-bottom: 1px solid $greyborder;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    opacity: .4;
+    letter-spacing: 2px;
+    font-family: 'MuseoSans-500', sans-serif;
+
+    @media screen and (min-width: $desktopsmall) {
+        display: none;
+    }
+}
+
+.video-area {
+    border-bottom: 1px solid $greyborder;
+    position: relative;
+    background: $offblack;
+    padding: 20px;
+
+    @media screen and (min-width: $desktopsmall) {
+        padding: 40px;
+    }
+}
+
+.fluid-width-video-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    padding-top: 56.25%;
+    overflow: hidden;
+
+    iframe, object, embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.share-area {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 170px;
+    margin-top: 20px;
+    margin-left: 0;
+
+    span {
+        display: none;
+    }
+
+    ul {
+        overflow: hidden;
+    }
+
+    li {
+        display: block;
+        box-sizing: border-box;
+        background: black;
+        color: white;
+        float: left;
+        margin-right: 10px;
+        overflow: hidden;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            width: 50px;
+            height: 50px;
+            display: block;
+            text-align: center;
+
+            &:hover,
+            &:focus {
+                svg path {
+                    fill: white;
+                }
+            }
+        }
+
+        .icon {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto;
+            padding: 13px 10px;
+            box-sizing: border-box;
+
+            &.icon-facebook {
+                padding: 15px 15px;
+            }
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 202px;
+        float: right;
+
+        > span {
+            display: inline-block;
+            float: left;
+            margin-right: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            opacity: .4;
+        }
+
+        li:nth-child(2) {
+            margin-right: 0;
+        }
+
+        li:last-child {
+            display: none;
+        }
+    }
+}
+
+.video-nav {
+    .button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .prev-btn {
+        display: none;
+    }
+
+    .next-btn {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktoplarge) {
+        .prev-btn,
+        .next-btn {
+            top: 50%;
+            margin-top: -20px;
+            position: absolute;
+            display: block;
+        }
+
+        .prev-btn {
+            left: 40px;
+        }
+
+        .next-btn {
+            right: 40px;
+        }
+    }
+}
+
+.video-info {
+    overflow: hidden;
+    text-align: left;
+    padding: 20px 20px;
+    border-bottom: 1px solid $greyborder;
+    position: relative;
+    z-index: 2;
+
+    @media screen and (min-width: $tablet) {
+        .video-titles {
+            float: left;
+        }
+
+        .share-area {
+            float: right;
+        }
+    }
+}
+
+.video-title {
+    font-size: 34px;
+    line-height: 42px;
+    font-family: 'MuseoSans-900', sans-serif;
+    color: $red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &.small-title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+.more-episodes {
+    padding: 20px;
+    border-bottom: 1px solid $greyborder;
+    margin-bottom: 40px;
+
+    ul {
+        overflow: hidden;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    li {
+        margin-bottom: 40px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 4px;
+        }
+    }
+
+    .video-image {
+        display: block;
+        position: relative;
+
+        .play-btn {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            opacity: 0;
+            margin-top: -30px;
+            margin-left: -30px;
+        }
+
+        &:hover {
+            .play-btn {
+                opacity: 1;
+            }
+        }
+    }
+
+    .now-playing-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 8px 10px 6px;
+        background: $red;
+        color: white;
+        font-size: 12px;
+        line-height: 10px;
+        display: none;
+    }
+
+    .now-playing {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        li {
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .now-playing {
+            display: block;
+
+            .now-playing-box {
+                display: block;
+            }
+        }
+    }
+}
+
+.touch .more-episodes {
+    .video-image {
+        .play-btn {
+            opacity: 1;
+        }
+    }
+}
+
+.episode-title {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    opacity: .4;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+        line-height: 20px;
+
+        &.small-title {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

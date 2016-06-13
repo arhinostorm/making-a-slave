@@ -1,0 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Life as a slave in the UK
+description: Watch 4 volunteers endure 24 hours as modern day slaves in Britain.
+baseurl: "" # the subpath of your site, e.g. /bloghttp://body-scrubs.pilots.bbcconnectedstudio.co.uk" # the base hostname & protocol for your site
+#url: ''
+url: 'http://bbc.tomoliverharrison.co.uk'
+#url: 'http://once-upon-a-tweet.pilots.bbcconnectedstudio.co.uk'
+# Build settings
+highlighter: true
+markdown: kramdown
+permalink: pretty
+#gems:
+#    - jekyll-minifier
+
