@@ -97,6 +97,7 @@ require(['jquery','pilot-lib/taster-offsite-panel','modernizr','jscookie','scrol
                 $(".text-panel").addClass("animate-in");
             }
         }
+        onScroll();
 
         $(window).resize(function() 
         {

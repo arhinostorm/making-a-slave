@@ -32,7 +32,7 @@
         <div class="wrapper">
           <div class="video-titles">
             <h1 class="video-title">{{page.title}}</h1>
-            <h2 class="episode-title">Episode {{page.episode}}</h2>
+            <h2 class="episode-title">Episode {{page.episode}} - {{page.runtime}}</h2>
           </div>
           <section class="share-area">
             <span>Share via:</span>
@@ -86,7 +86,7 @@
                 </span>
               </a>
               <h2 class="video-title small-title">Identity</h4>
-              <h3 class="episode-title small-title">Episode 1</h3>
+              <h3 class="episode-title small-title">Episode 1 - 10:10</h3>
             </li>
              <li {% if page.episode == 2 %} class="now-playing" {% endif %}>
               <a href="/fear" class="video-image">
@@ -97,7 +97,7 @@
                 </span>
               </a>
                <h2 class="video-title small-title">Fear</h4>
-               <h3 class="episode-title small-title">Episode 2</h3>
+               <h3 class="episode-title small-title">Episode 2 - 08:31</h3>
             </li>
             <li {% if page.episode == 3 %} class="now-playing" {% endif %}>
               <a href="/end-game" class="video-image">
@@ -108,7 +108,7 @@
                 </span>
               </a>
               <h2 class="video-title small-title">End Game</h4>
-              <h3 class="episode-title small-title">Episode 3</h3>
+              <h3 class="episode-title small-title">Episode 3 - 10:51</h3>
             </li>
           </ul>
         </div>
