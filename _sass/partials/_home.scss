@@ -290,7 +290,7 @@
     letter-spacing: 2px;
     text-decoration: none;
     color: white;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
   }
 
   .video-image {
@@ -393,7 +393,7 @@
 
     h5 {
       &.fear {
-        margin-left: 60px;
+        text-align: right;
       }
     }
 
