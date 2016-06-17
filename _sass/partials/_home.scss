@@ -232,6 +232,12 @@
     font-size: 22px;
     line-height: 42px;
     opacity: 1;
+
+    strong {
+      color: #dd2e23;
+      font-weight: 900;
+    }
+    
   }
 
   @media screen and (min-width: $tablet) {

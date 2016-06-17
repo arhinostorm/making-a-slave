@@ -9,9 +9,10 @@
 title: Life as a slave in the UK
 description: Watch 4 volunteers endure 24 hours as modern day slaves in Britain.
 baseurl: "" # the subpath of your site, e.g. /bloghttp://body-scrubs.pilots.bbcconnectedstudio.co.uk" # the base hostname & protocol for your site
-#url: ''
+#url: 'http://127.0.0.1:4000'
 #url: 'http://bbc.tomoliverharrison.co.uk'
-url: 'http://making-a-slave.pilots.bbcconnectedstudio.co.uk'
+url: 'http://digitalstorytelling.pilots.bbcconnectedstudio.co.uk/making-a-slave'
+#url: 'http://making-a-slave.pilots.bbcconnectedstudio.co.uk'
 # Build settings
 highlighter: true
 markdown: kramdown

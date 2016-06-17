@@ -1,7 +1,4 @@
-# Once Upon a Tweet
-Destination microsite for short form pilots
-
-Refer to Wiki for more information; https://github.com/bbc/once-upon-a-tweet/wiki
+# Making a Slave
 
 # Versioning
 
@@ -35,9 +32,9 @@ this is the html minifier, which causes trouble serving locally. Be sure to put 
 
 If for any reason the videos need changing, then you need to edit the index.html file in each of the following folders:
 
--truecityhearts
-- leodevalios
-- gulwalip
+- indentity
+- fear
+- end-game
 
 Simply change the vimeoid variable in each file and then rebuild the _site folder.
 
