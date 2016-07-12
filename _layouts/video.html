@@ -32,7 +32,7 @@
         <div class="wrapper">
           <div class="video-titles">
             <h1 class="video-title">{{page.title}}</h1>
-            <h2 class="episode-title">Episode {{page.episode}}</h2>
+            <h2 class="episode-title">Episode {{page.episode}} - {{page.runtime}}</h2>
           </div>
           <section class="share-area">
             <span>Share via:</span>
@@ -78,15 +78,15 @@
           
           <ul>
             <li {% if page.episode == 1 %} class="now-playing" {% endif %}>
-              <a href="/identity" class="video-image">
-                <img src="../assets/images/identity.jpg" alt="identity">
+              <a href="/trapped" class="video-image">
+                <img src="../assets/images/identity.jpg" alt="trapped">
                 <div class="now-playing-box">NOW PLAYING</div>
                 <span class="play-btn button">
                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.5 92.5"><path d="M46.25,0A46.25,46.25,0,1,0,92.5,46.25,46.25,46.25,0,0,0,46.25,0ZM39,62.5V30L62.33,45.72Z" fill="#e32028"/></svg>
                 </span>
               </a>
-              <h2 class="video-title small-title">Identity</h4>
-              <h3 class="episode-title small-title">Episode 1</h3>
+              <h2 class="video-title small-title">Trapped</h4>
+              <h3 class="episode-title small-title">Episode 1 - 10:11</h3>
             </li>
              <li {% if page.episode == 2 %} class="now-playing" {% endif %}>
               <a href="/fear" class="video-image">
@@ -97,7 +97,7 @@
                 </span>
               </a>
                <h2 class="video-title small-title">Fear</h4>
-               <h3 class="episode-title small-title">Episode 2</h3>
+               <h3 class="episode-title small-title">Episode 2 - 08:31</h3>
             </li>
             <li {% if page.episode == 3 %} class="now-playing" {% endif %}>
               <a href="/end-game" class="video-image">
@@ -108,7 +108,7 @@
                 </span>
               </a>
               <h2 class="video-title small-title">End Game</h4>
-              <h3 class="episode-title small-title">Episode 3</h3>
+              <h3 class="episode-title small-title">Episode 3 - 10:51</h3>
             </li>
           </ul>
         </div>
