@@ -47,26 +47,26 @@ require(['jquery','pilot-lib/taster-offsite-panel','modernizr','jscookie','scrol
         /*** Trigger Wirewax  Popup ****/
         /*******************************/
 
-       function getUrlVars() {
-            var vars = {};
-            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-            vars[key] = value;
-            });
-            return vars;
-        }
+       // function getUrlVars() {
+       //      var vars = {};
+       //      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+       //      vars[key] = value;
+       //      });
+       //      return vars;
+       //  }
     
-        if(getUrlVars().iv) {
+       //  if(getUrlVars().iv) {
         
-            $("body").scrollTo($("#modernslavery"), 500, {axis: "y"});
+       //      $("body").scrollTo($("#modernslavery"), 500, {axis: "y"});
             
-            $.magnificPopup.open({
-              items: {
-                src: '//embed.wirewax.com/8035526/?enablejsapi=1&loop=1'
-              },
-              type: 'iframe'
-            });
+       //      $.magnificPopup.open({
+       //        items: {
+       //          src: '//embed.wirewax.com/8035526/?enablejsapi=1&loop=1'
+       //        },
+       //        type: 'iframe'
+       //      });
 
-        }
+       //  }
        
 
         /*******************************/
